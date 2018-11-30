@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import random
 from matplotlib import colors as c
 
-nuclear = mahotas.imread('flower.png')
+nuclear = mahotas.imread('data/flower.png')
 nuclear = nuclear[:,:,0]
 nuclear = mahotas.gaussian_filter(nuclear, 1.)
 threshed  = (nuclear > nuclear.mean())
